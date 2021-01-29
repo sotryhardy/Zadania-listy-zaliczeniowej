@@ -1,0 +1,28 @@
+def netto(a):
+    return a - ( a * (28.6/100))
+    
+def emerytura(a):
+    return a * (9.76/100)
+
+def rentowe(a):
+    return a * (1.5/100)
+
+def chorobowe(a):
+    return a * (2.45 / 100)
+
+def zdrowotne(a):
+    return a * (7.77 / 100)
+
+def podatek(a):
+    return a * (7.12/100)
+
+def znaki(a, digits=0):
+    return f"{a:.{digits}f}"
+
+a = int(input('Podaj miesięczne zarobki: '))
+print('Netto: ', znaki(netto(a), 2))
+print('Ubezpieczenie emerytalne: ', znaki(emerytura(a), 2))
+print('Ubezpieczenie rentowe: ', znaki(rentowe(a),2))
+print('Ubezpieczenie chorobowe: ', znaki(chorobowe(a),2))
+print('Ubezpieczenie zdrowotne: ', znaki(zdrowotne(a),2))
+print('Zaliczka na podatek: ', znaki(podatek(a), 2))
