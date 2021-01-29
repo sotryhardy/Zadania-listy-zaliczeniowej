@@ -1,0 +1,48 @@
+def ocena(a):
+    s = ''
+    if a <=4:
+        s = 'Bardzo źle wiesz material, masz nauczyćponownie'
+        return s
+    elif a >= 5 and a <= 7:
+        s = 'Dobrze wiesz material'
+        return s
+    else:
+        s = 'Swietnie wiesz material!'
+        return s
+
+print('\t Test z wiedzy informatycznej')
+print('10 pytań')
+
+i = 0
+a = int(input(' Co takie "bit"?\n1 - Rytm w muzyce\n2 - Jedynostka informacji\n3 - Nie wiem\n'))
+if a == 2:
+    i+=1
+a = int(input(' Czemu jest równy bajt?\n1 - 8 bitam\n2 - 24 bitam\n3 - 1 bitu\n'))
+if a == 1:
+    i += 1
+a = int(input(' 1 tb to: \n1 - 1000 gb\n2 - 1024 mb \n3 - 1024 gb\n'))
+if a == 3:
+    i+=1
+a = int(input(' Python jest: \n1 - Język interpretowany \n2 - Język kompilowany\n'))
+if a == 1:
+    i+=1 
+a = int(input(' Czy lubisz kotów?\n 1 - Tak \n 2 -Nie\n'))
+if a == 1:
+    i += 1
+a = int(input(' W jakim systemie pracuję komputer?\n1 - W binarnym\n2 - W szestnastkowym\n3 - W ósemkowym\n'))
+if a == 1:
+    i+=1
+a = int(input(' Int to...\n1 - coś krótke\n2 - typ danych\n3 - Nie wiem\n'))
+if a == 1:
+    i += 1
+a = int(input(' Biblioteka to...\n1 - Miejsce z książkami\n2 - plik dostarczający podprogramy,\ndane oraz typy danych które mogą zostać wykorzystane z poziomu kodu źródłowego programu\n'))
+if a == 2:
+    i += 1
+a = int(input(' Зrocesor składa się...\n1 -Z tranzystorów\2 -Z inwestorów\n'))
+if a == 1:
+    i+=1
+a = int(input(' Jak interprytują stan tranzystora?\n1 - włączony(0) i wyłączony(1)\n2 - włączony(1) i wyłączony(0)\n'))
+if a == 2:
+    i+=1
+
+print(ocena(i))
