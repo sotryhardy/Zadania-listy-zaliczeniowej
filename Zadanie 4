@@ -1,0 +1,11 @@
+def realpoj(a):
+    return (a * 1000000000)/1024/1024/1024
+def znaki(a, digits=0):
+    return f"{a:.{digits}f}"
+
+a = int(input('Podaj pojemność[gb]: '))
+
+print('Pojemność realna: ', znaki(realpoj(a),2), "GB")
+
+
+
