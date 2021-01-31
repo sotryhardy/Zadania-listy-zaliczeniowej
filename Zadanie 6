@@ -1,0 +1,20 @@
+def funk(a):
+    s = ''
+    if a <= 32:
+        s = 'Woda zamarza'
+        return s
+    elif a >= 212:
+        s = 'Woda wrze'
+        return s 
+    else:
+        s = 'Woda jest w stane normalnym'
+        return s
+
+
+celsius = int(input(' Podaj w Celsjuszach: '))
+
+fahrenheit = (celsius * (9/5)) + 32
+
+print(fahrenheit, 'w stopniach Fahrenheita')
+
+print(funk(fahrenheit))
