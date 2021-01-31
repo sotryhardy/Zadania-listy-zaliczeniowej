@@ -1,0 +1,94 @@
+def UsdThb(a):
+    return a*2986
+def ThbUsd(a):
+    return a / 2986
+def BthUsd(a):
+    return a * 34375
+def UsdBtn(a):
+    return a / 34375
+def BtnUsd(a):
+    return a / 72
+def UsdBtn(a):
+    return a * 72
+def MroUsd(a):
+    return a / 36
+def UsdMro(a):
+    return a * 36
+def EthUsd(a):
+    return a / 1378
+def UsdEth(a):
+    return a * 1378
+def IotaUsd(a):
+    return a / 0.4272
+def UsdIota(a):
+    return a * 0.4272
+
+print('\tWitam! Wybież waluty dla Przeliszenia:')
+
+print('1 - Baht Tajski (THB) - Dolary amerykańskie (USD)')
+print('2 - Bitcoin (BTC) - Dolary amerykański(USD)')
+print('3 - Ngultrum bhutański(BTN) - Dolary amerykańskie(USD)')
+print('4 - Ugija mauretańska(MRO) - Dolary amerykańskie (USD)')
+print('5 - Ethereum(ETH) – Dolary amerykańskie (USD)')
+print('6 - IOTA - Dolary amerykańskie (USD)')
+a = int(input(' '))
+
+pod = 0
+i = 0
+if a == 1:
+    i = int(input(' 1 - Z USD\n 2 - z THB\n'))
+    if i == 1:
+        pod = int(input('Podaj ilość[USD]: \n'))
+        print(UsdThb(pod), 'THB')
+    else:
+        pod = int(input('Podaj ilość[THB]: \n'))
+        print(ThbUsd(pod), 'THB')
+
+
+if a == 2:
+    i = int(input(' 1 - Z BTH\n 2 - z USD\n'))
+    if i == 1:
+        pod = int(input('Podaj ilość[BTH]: \n'))
+        print(BthUsd(pod), 'USD')
+    else:
+        pod = int(input('Podaj ilość[USD]: \n'))
+        print(UsdBth(pod), 'Bth')
+
+
+if a == 3:
+    i = int(input(' 1 - Z BTN\n 2 - z USD\n'))
+    if i == 1:
+        
+        pod = int(input('Podaj ilość[BTN]: \n'))
+        print(BtnUsd(pod), 'USD')
+        
+    else:
+        pod = int(input('Podaj ilość[USD]: \n'))
+        print(UsdBtn(pod), 'BTN')
+
+if a == 4:
+    i = int(input(' 1 - Z MRO\n 2 - z USD\n'))
+    if i == 1:
+        pod = int(input('Podaj ilość[MRO]: \n'))
+        print(MroUsd(pod), 'USD')
+    else:
+        pod = int(input('Podaj ilość[USD]: \n'))
+        print(UsdMro(pod), 'MRO')
+
+if a == 5:
+    i = int(input(' 1 - Z ETH\n 2 - z USD\n'))
+    if i == 1:
+        pod = int(input('Podaj ilość[ETH]: \n'))
+        print(EthUsd(pod), 'USD')
+    else:
+        pod = int(input('Podaj ilość[USD]: \n'))
+        print(UsdEth(pod), 'ETH')
+
+if a == 6:
+    i = int(input(' 1 - Z USD\n 2 - z IOTA\n'))
+    if i == 1:
+        pod = int(input('Podaj ilość[USD]: \n'))
+        print(UsdIota(pod), 'IOTA')
+    else:
+        pod = int(input('Podaj ilość[IOTA]: \n'))
+        print(IotaUsd(pod), 'USD')
