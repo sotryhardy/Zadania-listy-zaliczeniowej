@@ -1,0 +1,73 @@
+
+    
+
+while True:
+    d = int(input('Podaj dzień: '))
+    m = int(input('Podaj miesiąc: '))
+    r = int(input('Podaj rok: '))
+    
+    d+=1
+
+    if m == 1:
+        if d >31:
+            m+=1
+            d = 1
+    elif m == 2:
+        if d > 28:
+            m+= 1
+            d=1
+    elif m == 3:
+        if d > 31:
+            m+= 1
+            d=1
+    elif m == 4:
+        if d > 30:
+            m += 1
+            d=1
+    elif m == 5:
+        if d > 31:
+            m+=1
+            d=1
+    elif m == 5:
+        if d > 31:
+            m+=1
+            d=1
+    elif m == 6:
+        if d > 30:
+            m+=1
+            d=1
+    elif m == 7:
+        if d > 31:
+            m+=1
+            d = 1
+    elif m == 8:
+        if d > 31:
+            m+=1
+            d = 1
+    elif m == 9:
+        if d >30:
+            m+=1
+            d = 1
+    elif m == 10:
+        if d > 31:
+            m+= 1 
+            d = 1
+    elif m ==  11:
+        if d > 30:
+            m+= 1 
+            d = 1
+    elif m == 12:
+        if d > 31:
+            m+=1 
+            d = 1
+    if m > 12:
+        r += 1
+        m = 1
+    print('**********************')
+    print('Jutro będzie:' , d,m,r)
+    print('**********************')
+    
+
+
+
+
